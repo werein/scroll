@@ -21,6 +21,7 @@ module Scroll
 
     def new
       @page = Page.new
+      @page.translations.build
       respond_with @page
     end
 
