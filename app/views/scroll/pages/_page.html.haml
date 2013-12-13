@@ -1,10 +1,10 @@
 %article.page.row-fluid
   %header.title.span12
-    = manage_icons page, class: 'btn-group-outer', button_class: 'btn-small'
+    = manage_icons page, except: [:new, :list]
     %h1= editable page, :title, nested: :translations, nid: page.translation.id, e: link_to(page.title, page)
   .content
     - if page.image?
       .span5
         = link_to image_tag(page.image.thumb), page 
     %div{ class: page.image? ? 'span5' : 'span12' }
-      = extract page.content
+      = extract page.content, truncate: 300
