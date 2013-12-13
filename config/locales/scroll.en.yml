@@ -1,0 +1,15 @@
+---
+en:
+  scroll:
+    pages:
+      edit:
+        title: Edit page
+      form:
+        submit: Submit
+        translations:
+          new: New translation
+          title: New translation
+      index:
+        title: Pages
+      new:
+        title: New page

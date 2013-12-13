@@ -1,0 +1,9 @@
+---
+cs:
+  notice:
+    success:
+      scroll:
+        page:
+          create: Stránka vytvořena
+          destroy: Stránka smazána
+          update: Stránka aktualizována

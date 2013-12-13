@@ -1,0 +1,13 @@
+---
+en:
+  enumerize:
+    locale:
+      locale:
+        cs: Czech
+        de: Germany
+        en: English
+    scroll/page/translation:
+      locale:
+        cs: Czech
+        de: Germany
+        en: English

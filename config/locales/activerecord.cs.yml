@@ -1,0 +1,30 @@
+---
+cs:
+  activerecord:
+    attributes:
+      scroll/page:
+        active: Aktivní
+        created_at: Vytvořeno
+        image: Obrázek
+        translations: Překlady
+        updated_at: Aktualizováno
+      scroll/page/translation:
+        content: Obsah
+        created_at: Vytvořeno
+        locale: Jazyk
+        slug: SEO url
+        title: Název
+        updated_at: Aktualizováno
+    created_updated_at:
+      created_at: Vytvořeno
+      updated_at: Aktualizováno
+    models:
+      scroll/page:
+        one: Stránka
+        other: Stránky
+      scroll/page/translation:
+        one: Překlad
+        other: Překlady
+      translation:
+        one: Překlad
+        other: Překlady

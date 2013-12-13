@@ -1,0 +1,30 @@
+---
+en:
+  activerecord:
+    attributes:
+      scroll/page:
+        active: Active
+        created_at: Created at
+        image: Images
+        translations: Translations
+        updated_at: Updated at
+      scroll/page/translation:
+        content: Content
+        created_at: Created at
+        locale: Locale
+        slug: Slug
+        title: Title
+        updated_at: Updated at
+    created_updated_at:
+      created_at: Created at
+      updated_at: Updated at
+    models:
+      scroll/page:
+        one: Page
+        other: Pages
+      scroll/page/translation:
+        one: Translation
+        other: Translations
+      translation:
+        one: Translation
+        other: Translations

@@ -1,0 +1,12 @@
+%section#content.col-md-12
+  %article.page
+    .right
+      = manage_buttons @page, group_class: 'btn-group-show'
+    %header.title
+      %h1= editable @page, :title, nested: :translations, nid: @page.translation.id
+    .content.row
+      - if @page.image?
+        .col-md-5
+          = image_tag @page.image.row_fill, class: 'img-polaroid' 
+      %div{ class: @page.image? ? 'col-md-7' : 'col-md-12' }
+        = @page.content.html_safe if @page.content

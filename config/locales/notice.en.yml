@@ -1,0 +1,9 @@
+---
+en:
+  notice:
+    success:
+      scroll:
+        page:
+          create: Page was successfully created.
+          destroy: Page was successfully deleted.
+          update: Page was successfully updated.

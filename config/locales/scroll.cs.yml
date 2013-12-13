@@ -1,0 +1,15 @@
+---
+cs:
+  scroll:
+    pages:
+      edit:
+        title: Upravit stránku
+      form:
+        submit: Odeslat
+        translations:
+          new: Nový překlad
+          title: Přidat překlad
+      index:
+        title: Přehled stránek
+      new:
+        title: Nová stránka

@@ -1,0 +1,7 @@
+%section.cell.scroll.pages.list
+  %header
+    %h1= t :'cells.scroll.page.list.title'
+  .content
+    %ul.list-group
+      - @pages.each do |page|
+        %li= link_to page.title, scroll.page_path(page), class: 'list-group-item'
