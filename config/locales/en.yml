@@ -22,3 +22,21 @@ en:
       scroll/page/translation:
         one: Translation
         other: Translations
+  cells:
+    scroll:
+      page:
+        list:
+          title: Pages
+  enumerize:
+    locale:
+      locale:
+        cs: Czech
+        de: Germany
+        en: English
+    scroll/page/translation:
+      locale:
+        cs: Czech
+        de: Germany
+        en: English
+  routes:
+    pages: pages

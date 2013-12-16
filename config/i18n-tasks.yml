@@ -1,4 +1,4 @@
-base_locale: cs
+base_locale: en
 locales: ['en', 'cs']
 
 # i18n data storage
@@ -16,12 +16,14 @@ data:
     # this would save all devise keys in it's own file (per locale):
     - ['scroll.*', 'config/locales/scroll.%{locale}.yml']
     - ['notice.*', 'config/locales/notice.%{locale}.yml']
-    - ['routes.*', 'config/locales/routes.%{locale}.yml']
-    - ['activerecord.*', 'config/locales/activerecord.%{locale}.yml']
-    - ['enumerize.*', 'config/locales/enumerize.%{locale}.yml']
-    - ['cells.*', 'config/locales/cells.%{locale}.yml']
     # this is the default catch-all:
     - 'config/locales/%{locale}.yml' # path is short for ['*', path]
+
+# i18n usage search in source
+search:
+  # explicitly exclude files (default: blank = exclude no files)
+  exclude:
+    - '*_controller.rb'
 
 ignore:
   - app.*
