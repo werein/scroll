@@ -23,13 +23,17 @@ gem 'auth',
   git: 'git@git.imin.cz:project/auth.git'
 
 # Core dependencies
-gem 'uploadable', 
-  branch: 'master',
+gem 'ckeditor-outsourced', branch: 'master',
+  git: 'git@git.imin.cz:project/ckeditor-outsourced.git'
+
+gem 'uploadable', branch: 'master',
   git: 'git@git.imin.cz:project/uploadable.git'
 
-gem 'ckeditor-outsourced', 
-  branch: 'master',
-  git: 'git@git.imin.cz:project/ckeditor-outsourced.git'
+gem 'extension-multiselect', branch: 'master',
+  git: 'git@git.imin.cz:project/extension-multiselect.git'
+
+gem 'sidrjs-rails', branch: 'master',
+  git: 'git@git.imin.cz:project/sidrjs-rails.git'
 
 # Test dependencies
 gem 'testable', 
