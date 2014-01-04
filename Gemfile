@@ -18,27 +18,24 @@ gem 'core',
   branch: 'master',
   git: 'git@git.imin.cz:project/core.git'
 
+gem 'auth', 
+  branch: 'master',
+  git: 'git@git.imin.cz:project/auth.git'
+
+# Core dependencies
 gem 'uploadable', 
   branch: 'master',
   git: 'git@git.imin.cz:project/uploadable.git'
-
-gem 'testable', 
-  branch: 'master',
-  git: 'git@git.imin.cz:project/testable.git'
 
 gem 'ckeditor-outsourced', 
   branch: 'master',
   git: 'git@git.imin.cz:project/ckeditor-outsourced.git'
 
-gem 'auth', 
+# Test dependencies
+gem 'testable', 
   branch: 'master',
-  git: 'git@git.imin.cz:project/auth.git'
+  git: 'git@git.imin.cz:project/testable.git'
 
 # Demo dependencies 
-gem 'ckeditor', git: 'https://github.com/galetahub/ckeditor.git', branch: 'master'
-gem 'rails_admin', git: 'https://github.com/sferik/rails_admin.git', branch: 'master'
-gem 'rails_admin_glyph_theme'
-gem 'compass-rails', git: 'https://github.com/Compass/compass-rails.git', branch: 'master'
 gem 'bootstrap-sass', '~> 3.0'
-
 gem 'i18n-tasks', '~> 0.2'
