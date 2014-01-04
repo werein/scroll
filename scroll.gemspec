@@ -19,5 +19,4 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 4.0"
 
   s.add_development_dependency "testable"
-  s.add_development_dependency "i18n-tasks", '~> 0.2'
 end
