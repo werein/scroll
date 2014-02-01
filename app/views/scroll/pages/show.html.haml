@@ -2,7 +2,7 @@
   %article.page
     .right
       = manage_buttons @page, group_class: 'btn-group-show'
-    %header.title
+    %header.page-header
       %h1= editable @page, :title, nested: :translations, nid: @page.translation.id
     .content.row
       - if @page.image?
