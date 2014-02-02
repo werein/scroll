@@ -1,10 +1,9 @@
-%section#content.col-md-12
+#content.col-md-12
   %article.page
-    .right
-      = manage_buttons @page, group_class: 'btn-group-show'
-    %header.page-header
+    %header.page-header.manage-header
       %h1= editable @page, :title, nested: :translations, nid: @page.translation.id
-    .content.row
+      = manage_icons @page
+    .content.row.justify
       - if @page.image?
         .col-md-5
           = image_tag @page.image.row_fill, class: 'img-polaroid' 
