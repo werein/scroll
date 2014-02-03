@@ -1,5 +1,7 @@
 require 'test_helper'
- 
+
+require_dependency "scroll/application_controller"
+
 module Scroll
   class StubbedController < ApplicationController
     def test_ability
