@@ -8,12 +8,12 @@
 // compiled file, but it's generally better to create a new file per style scope.
 
 // New and edit
-#scroll-pages.new, #scroll-pages.edit
+#scroll.pages.new, #scroll.pages.edit
   #main-content
     +make-md-column(12)
 
 // Index and show - Article
-#scroll-pages.show
+#scroll.pages.show
   article.page
     +make-md-column(12)
     @extend .manage-header
@@ -37,7 +37,7 @@
           @extend .img-polaroid
 
 // Index and show - Article
-#scroll-pages.index
+#scroll.pages.index
   #main-content
     +make-md-column(8)
     header.main
