@@ -1,9 +1,9 @@
-#content.col-md-9
-  %header.page-header.manage-header
-    %h1= t '.title'
-    = create_button Scroll::Page
-  .content
-    = render @pages
+%section#main-content
+  %header.main
+    .content
+      %h1= t '.title'
+      = create_button Scroll::Page
+  #pages= render @pages
 
-.sidebar.right.col-md-3
+.sidebar.sidebar-right
   = render_cell 'scroll/page', :list

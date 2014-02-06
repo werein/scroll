@@ -1,10 +1,8 @@
-%article.page.row
-  %header.manage-header.col-md-12
+%article.page
+  %div{class: ('ilustrated' if page.image?)}
     = manage_icons page, except: [:new, :list]
-    %h1= editable page, :title, nested: :translations, nid: page.translation.id, e: link_to(page.title, page)
-  .content
-    - if page.image?
-      .col-md-5
-        = link_to image_tag(page.image.thumb), page 
-    %div{ class: page.image? ? 'col-md-5' : 'col-md-12' }
-      = extract page.content, truncate: 300
+    .page-ilustration= link_to image_tag(page.image.landscape.thumb), page
+    %header.page
+      .content
+        %h2= editable page, :title, nested: :translations, nid: page.translation.id, e: link_to(page.title, page)
+    .page-content= extract page.content, truncate: 190

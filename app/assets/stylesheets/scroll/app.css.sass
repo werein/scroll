@@ -1,0 +1,74 @@
+// This is a manifest file that'll be compiled into application.css, which will include all the files
+// listed below.
+//
+// Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+// or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+//
+// You're free to add application-wide styles to this file and they'll appear at the top of the
+// compiled file, but it's generally better to create a new file per style scope.
+
+// New and edit
+#scroll-pages.new, #scroll-pages.edit
+  #main-content
+    +make-md-column(12)
+
+// Index and show - Article
+#scroll-pages.show
+  article.page
+    +make-md-column(12)
+    @extend .manage-header
+    padding-bottom: 20px
+    header.page
+      text-align: left
+    .page-ilustration
+      display: none
+    .page-content
+      margin-top: 10px
+      text-align: justify
+  article.page
+    > .ilustrated
+      .page-ilustration
+        +make-md-column(4)
+        padding-left: 0
+        padding-bottom 15px
+        display: block
+        img
+          @extend .img-responsive
+          @extend .img-polaroid
+
+// Index and show - Article
+#scroll-pages.index
+  #main-content
+    +make-md-column(8)
+    header.main
+      .content
+        @extend .manage-header
+  .sidebar
+    +make-md-column(4)
+  article.page
+    @extend .manage-header
+    margin-top: 20px
+    padding-bottom: 10px
+    border-bottom: solid 2px #eee
+    text-align: right
+    header.page
+      text-align: right
+    .page-ilustration
+      display: none
+    .page-content
+      margin-top: 10px
+      text-align: justify
+  article.page
+    > .ilustrated
+      +make-row
+      .page-ilustration
+        +make-md-column(5)
+        display: block
+        margin-top: 10px
+        padding-bottom: 10px
+        img
+          @extend .img-responsive
+      header.page
+        +make-md-column(7)
+      .page-content
+        +make-md-column(7)
