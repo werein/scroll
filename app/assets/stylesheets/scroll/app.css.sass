@@ -9,25 +9,27 @@
 
 // New and edit
 #scroll.pages.new, #scroll.pages.edit
-  #main-content
+  #content
     +make-md-column(12)
 
 // Index and show - Article
 #scroll.pages.show
-  article.page
+  #content
     +make-md-column(12)
+  article.page
     @extend .manage-header
     padding-bottom: 20px
-    header.page
-      text-align: left
-    .page-ilustration
-      display: none
-    .page-content
-      margin-top: 10px
-      text-align: justify
+    > .wrap
+      > header
+        text-align: left
+      > .ilustration
+        display: none
+      > .content
+        margin-top: 10px
+        text-align: justify
   article.page
     > .ilustrated
-      .page-ilustration
+      > .ilustration
         +make-md-column(4)
         padding-left: 0
         padding-bottom 15px
@@ -38,11 +40,8 @@
 
 // Index and show - Article
 #scroll.pages.index
-  #main-content
+  #content
     +make-md-column(8)
-    header.main
-      .content
-        @extend .manage-header
   .sidebar
     +make-md-column(4)
   article.page
@@ -51,24 +50,25 @@
     padding-bottom: 10px
     border-bottom: solid 2px #eee
     text-align: right
-    header.page
-      text-align: right
-    .page-ilustration
-      display: none
-    .page-content
-      margin-top: 10px
-      text-align: justify
+    > .wrap
+      > header
+        text-align: right
+      > .ilustration
+        display: none
+      > .content
+        margin-top: 10px
+        text-align: justify
   article.page
     > .ilustrated
       +make-row
-      .page-ilustration
+      > .ilustration
         +make-md-column(5)
         display: block
         margin-top: 10px
         padding-bottom: 10px
         img
           @extend .img-responsive
-      header.page
+      > header
         +make-md-column(7)
-      .page-content
+      > .content
         +make-md-column(7)

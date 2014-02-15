@@ -1,8 +1,12 @@
-%section#main-content
-  %header.main
-    .content
-      %h1= t '.title'
-      = create_button Scroll::Page
+- content_for :before_content do
+  #before-content
+    .wrapper
+      #before-content-content
+        %header.main
+          %h1= t '.title'
+          = create_button Scroll::Page
+
+%section#content
   #pages= render @pages
 
 .sidebar.sidebar-right
