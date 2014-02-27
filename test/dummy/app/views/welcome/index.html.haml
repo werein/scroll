@@ -1,0 +1,10 @@
+- content_for :before_content do
+  #before-content
+    .wrapper
+      #before-content-content
+        %header.main
+          %h1 Welcome
+
+%section#content
+  Find me in app/views/welcome/index.html.erb
+  = link_to 'Apple', page_path('apple')

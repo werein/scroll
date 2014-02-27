@@ -1,5 +1,6 @@
 require 'core'
 require 'auth'
+require 'high_voltage'
 
 module Scroll
   class Engine < ::Rails::Engine
