@@ -2,12 +2,12 @@ module Scroll
   class Page < ActiveRecord::Base
     translates :slug, :title, :content
     validates :translations, presence: :true
-    include Core::Concerns::Localizable
+    accepts_nested_attributes_for :translations, allow_destroy: true
 
     extend FriendlyId
     friendly_id :title, use: :slugged
 
-    mount_uploader :image, Uploadable::Image
+    mount_uploader :image, Uppr::Image
     store_in_background :image
 
     scope :activated, ->{ where(active: true) }
