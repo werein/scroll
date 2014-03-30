@@ -1,5 +1,5 @@
 module Scroll
-  class ApplicationController < Core::ApplicationController
+  class ApplicationController < ::ApplicationController
     
     # User ability
     def current_ability
