@@ -1,6 +1,13 @@
-require 'core'
+require 'foundationstone'
 require 'auth'
+require 'uppr'
+require 'enumerize'
+require 'globalize'
+require 'friendly_id'
+require 'cells'
 require 'high_voltage'
+require 'ckeditor'
+require 'cocoon'
 
 module Scroll
   class Engine < ::Rails::Engine
