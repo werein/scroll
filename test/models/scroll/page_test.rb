@@ -20,4 +20,10 @@ describe Scroll::Page do
   it "must have html safe content" do 
     page.content.must_equal page.html.html_safe
   end
+
+  it "must envoke markdown if is file or remote" do 
+    page.translation.expects(:markdown)
+    page.translation.content_type = 'file'
+    page.content
+  end
 end

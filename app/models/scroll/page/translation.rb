@@ -21,12 +21,18 @@ module Scroll
       case content_type
       when 'html'
         html.html_safe
+      when 'file', 'remote'
+        markdown
       end
     end
 
     private
       def set_slug
         self.slug = slug? ? slug.try(:parameterize) : to_s.try(:parameterize)
+      end
+
+      def markdown
+        # Todo
       end
   end
 end
