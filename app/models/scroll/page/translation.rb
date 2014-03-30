@@ -1,3 +1,5 @@
+require 'kramdown'
+
 module Scroll
   class Page::Translation < Globalize::ActiveRecord::Translation 
     extend Enumerize
