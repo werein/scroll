@@ -1,6 +1,8 @@
 require "test_helper"
 
 describe Scroll::Page do
+  should accept_nested_attributes_for(:translations)
+
   let(:page)          { build_stubbed(:page) }
 
   it "default must be valid" do
@@ -13,5 +15,9 @@ describe Scroll::Page do
 
   it "must have at least one translation" do
     build_stubbed(:page, translations: []).wont_be :valid?
+  end
+
+  it "must have html safe content" do 
+    page.content.must_equal page.html.html_safe
   end
 end

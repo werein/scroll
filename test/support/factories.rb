@@ -16,14 +16,16 @@ FactoryGirl.define do
     title 'Apple iPhone'
     sequence(:slug) {|n| "Apple iPhone #{n}" }
     locale 'en'
-    content 'Apple iPhone is best phone ever'
+    html 'Apple iPhone is best phone ever'
+    content_type 'html'
   end
 
   factory :page_cs_translation, class: Scroll::Page::Translation do
     title 'Apple iPhone'
     sequence(:slug) {|n| "Apple iPhone #{n}" }
     locale 'cs'
-    content 'Apple iPhone je nejlepsi telefon'
+    html 'Apple iPhone je nejlepsi telefon'
+    content_type 'html'
   end
 
   factory :invalid_page, parent: :page do 

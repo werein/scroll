@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131213142632) do
+ActiveRecord::Schema.define(version: 20140330094347) do
 
   create_table "auth_assignments", force: true do |t|
     t.integer  "user_id"
@@ -95,9 +95,13 @@ ActiveRecord::Schema.define(version: 20131213142632) do
     t.string   "title"
     t.string   "locale"
     t.string   "slug"
-    t.text     "content"
+    t.text     "html"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "md_file"
+    t.string   "md_file_tmp"
+    t.string   "md_remote"
+    t.string   "content_type"
   end
 
   add_index "scroll_page_translations", ["locale"], name: "index_scroll_page_translations_on_locale"

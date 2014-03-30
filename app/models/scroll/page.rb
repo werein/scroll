@@ -1,6 +1,6 @@
 module Scroll
   class Page < ActiveRecord::Base
-    translates :slug, :title, :content
+    translates :slug, :title, :html, :content
     validates :translations, presence: :true
     accepts_nested_attributes_for :translations, allow_destroy: true
 

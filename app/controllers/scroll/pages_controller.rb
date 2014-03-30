@@ -53,7 +53,7 @@ module Scroll
       end
 
       def page_params
-        params.require(:page).permit(:active, :image, translations_attributes: [:id, :title, :slug, :locale, :content, :_destroy]) if params[:page]
+        params.require(:page).permit(:active, :image, translations_attributes: [:id, :title, :slug, :locale, :html, :content_type, :_destroy]) if params[:page]
       end
   end
 end
