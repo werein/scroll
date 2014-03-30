@@ -1,13 +1,9 @@
-- content_for :before_content do
-  #before-content
-    .wrapper
-      #before-content-content
-        %header.main
-          = manage_icons @page
-          %h1= editable @page, :title, nested: :translations, nid: @page.translation.id
+%article.page
+  .wrap{class: ('ilustrated' if @page.image?)}
+    .ilustration= image_tag @page.image.original.thumb
+    .content= @page.content.try(:html_safe)
 
-%section#content
-  %article.page
-    .wrap{class: ('ilustrated' if @page.image?)}
-      .ilustration= image_tag @page.image.original.thumb
-      .content= @page.content.try(:html_safe)
+- content_for :bow do
+  %header.main
+    = manage_icons @page
+    %h1= editable @page, :title, nested: :translations, nid: @page.translation.id

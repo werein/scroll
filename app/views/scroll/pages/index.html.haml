@@ -1,13 +1,9 @@
-- content_for :before_content do
-  #before-content
-    .wrapper
-      #before-content-content
-        %header.main
-          %h1= t '.title'
-          = create_button Scroll::Page
+= render @pages
 
-%section#content
-  #pages= render @pages
+- content_for :bow do
+  %header.main
+    %h1= t '.title'
+    = create_button Scroll::Page
 
-.sidebar.sidebar-right
+- content_for :starboard do
   = render_cell 'scroll/page', :list
