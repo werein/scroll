@@ -2,5 +2,8 @@
   = f.input :title
   = f.input :slug
   = f.input :locale
-  = f.input :content, as: :ckeditor
+  = f.input :content_type
+  = f.input :md_file
+  = f.input :md_remote
+  = f.input :html, as: :ckeditor
   .remove= link_to_remove_association t('.translation.remove'), f, class: 'btn btn-danger'
