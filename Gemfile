@@ -21,5 +21,6 @@ gem 'x-editable-rails'
 gem 'rails_admin'
 gem 'simple_form', github: 'plataformatec/simple_form'
 
+gem 'tuberack', branch: :master, github: 'werein/tuberack'
 gem 'foundationstone', branch: :master, github: 'werein/foundationstone'
 gem 'auth', branch: :master, git: 'git@bitbucket.org:werein/auth.git'
