@@ -3,7 +3,7 @@ module Scroll
     include CanCan::Ability
 
     def initialize(user)
-      user ||= Auth::User.new
+      user ||= Scroll.user_class.new
 
       cannot :manage, :all
       can :index, :pages

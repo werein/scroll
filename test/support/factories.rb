@@ -1,10 +1,10 @@
-FactoryGirl.define do
-  factory :user, class: Auth::User do 
-    email 'test@gmail.com'
-    password '12345678'
-    confirmed_at Time.zone.now
-  end
-end
+# FactoryGirl.define do
+#   factory :user, class: Auth::User do 
+#     email 'test@gmail.com'
+#     password '12345678'
+#     confirmed_at Time.zone.now
+#   end
+# end
 
 FactoryGirl.define do
   factory :page, class: Scroll::Page do

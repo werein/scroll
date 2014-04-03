@@ -1,5 +1,4 @@
 require 'foundationstone'
-require 'auth'
 require 'uppr'
 require 'enumerize'
 require 'globalize'
@@ -8,8 +7,11 @@ require 'cells'
 require 'high_voltage'
 require 'ckeditor'
 require 'cocoon'
+require 'cancancan'
 
 module Scroll
+  mattr_accessor :user_class
+
   class Engine < ::Rails::Engine
     isolate_namespace Scroll
 

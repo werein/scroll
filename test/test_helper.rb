@@ -39,5 +39,6 @@ class ActiveSupport::TestCase
   include Scroll::Engine.routes.url_helpers
 end
 
-
 WebMock.disable_net_connect! allow: %w(coveralls.io)
+
+Scroll.user_class = 'Tuberack::DummyUser'
