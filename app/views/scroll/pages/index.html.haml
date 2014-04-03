@@ -3,7 +3,7 @@
 - content_for :bow do
   %header.main
     %h1= t '.title'
-    = create_button Scroll::Page
+    = manage_create_button Scroll::Page
 
 - content_for :starboard do
   = render_cell 'scroll/page', :list

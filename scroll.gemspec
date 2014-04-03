@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.test_files  = Dir['test/*.*' ,'test/{cells,controllers,data,helpers,integration,models}/**/*','test/dummy/*.*', 'test/dummy/{app,bin,config,db,lib}/**/*']
 
   s.add_dependency 'rails', '~> 4.0'
-  s.add_dependency 'foundationstone', '~> 0.0.1'
+  s.add_dependency 'foundationstone', '~> 0.0.3'
   s.add_dependency 'uppr', '~> 1.0'
   s.add_dependency 'high_voltage', '~> 2.1.0'
   s.add_dependency 'enumerize'
