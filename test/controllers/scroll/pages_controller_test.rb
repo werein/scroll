@@ -5,7 +5,7 @@ module Scroll
     let(:current_user)  { build(:user) } 
     let(:page_attr)     { attributes_for(:page, translations_attributes: [ attributes_for(:page_translation) ]).except(:translations) }
     let(:invalid_attr)  { attributes_for(:invalid_page) }
-    let(:current_user)  { mock 'user' }
+    let(:current_user)  { Tuberack::DummyUser.new }
 
     before do
       can Scroll::Page
@@ -64,7 +64,7 @@ module Scroll
     end
 
     it "should update page w valid attributes" do
-      patch :update, use_route: :scroll_engine, id: @page, translations_attributes: { translations: [ attributes_for(:page_cs_translation) ] }
+      patch :update, use_route: :scroll_engine, id: @page, page: { translations_attributes: { translations: [ attributes_for(:page_cs_translation) ] } }
       assigns(:page).errors.full_messages.must_be :empty?
       assert_response :redirect
       assert_redirected_to page_path(assigns(:page))
