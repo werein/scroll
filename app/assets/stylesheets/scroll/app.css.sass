@@ -1,71 +1,11 @@
-// Index and show - Article
-#scroll.pages.show
-  article.page
-    @extend .manage-header
-    padding-bottom: 20px
-    > .wrap
-      > header
-        text-align: left
-      > .ilustration
-        display: none
-      > .content
-        margin-top: 10px
-        text-align: justify
-  article.page
-    > .ilustrated
-      > .ilustration
-        +make-md-column(4)
-        padding-left: 0
-        padding-bottom 15px
-        display: block
-        img
-          @extend .img-responsive
-          @extend .img-polaroid
+// This is a manifest file that'll be compiled into application.css, which will include all the files
+// listed below.
+//
+// Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+// or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+//
+// You're free to add application-wide styles to this file and they'll appear at the top of the
+// compiled file, but it's generally better to create a new file per style scope.
 
-// Index and show - Article
-#scroll.pages.index
-  article.page
-    @extend .manage-header
-    margin-top: 20px
-    padding-bottom: 10px
-    border-bottom: solid 2px #eee
-    text-align: right
-    > .wrap
-      > header
-        text-align: right
-      > .ilustration
-        display: none
-      > .content
-        margin-top: 10px
-        text-align: justify
-  article.page
-    > .ilustrated
-      +make-row
-      > .ilustration
-        +make-md-column(5)
-        display: block
-        margin-top: 10px
-        padding-bottom: 10px
-        img
-          @extend .img-responsive
-      > header
-        +make-md-column(7)
-      > .content
-        +make-md-column(7)
-
-#scroll
-  #translations
-    position: relative
-    .nested-fields
-      margin: 15px 0
-    .links
-      position: absolute
-      right: 0
-      top: 0
-    .remove
-      text-align: right
-      margin: 15px 0
-
-table
-  @extend .table
-  @extend .table-striped
+@import scroll/dependencies
+@import scroll
