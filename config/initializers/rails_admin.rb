@@ -19,6 +19,9 @@ RailsAdmin.config do |config|
     field :title
     field :slug
     field :locale
-    field :content, :ck_editor
+    field :content_type
+    field :md_file
+    field :md_remote
+    field :html, :ck_editor
   end
 end if defined? RailsAdmin
